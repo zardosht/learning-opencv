@@ -1,3 +1,18 @@
 FIND_PACKAGE( OpenCV REQUIRED )
 ADD_EXECUTABLE( showimage  showimage.cpp )
 TARGET_LINK_LIBRARIES( showimage ${OpenCV_LIBS} )
+
+
+
+##the one C file
+#add_executable(cdemo cdemo.c)
+#target_link_libraries(cdemo m) #link the math library
+
+##these are all compiled the same way
+#set(PROGRAMS oglfirst pointers)
+#set(CORELIBS ${GLUT_LIBRARY} ${OPENGL_LIBRARY} m)
+
+#foreach(program ${PROGRAMS})
+#  add_executable(${program} ${program}.cpp)
+#  target_link_libraries(${program} ${CORELIBS})
+#endforeach(program)
